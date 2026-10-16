@@ -1,3 +1,169 @@
 <resources>
     <string name="app_name">OpenMusic</string>
+
+    <!-- 导航 -->
+    <string name="nav_piano">钢琴</string>
+    <string name="nav_ear">听音</string>
+    <string name="nav_sing">模唱</string>
+    <string name="nav_curve">曲线</string>
+    <string name="nav_melody">跟唱</string>
+
+    <!-- 关于 -->
+    <string name="about">关于</string>
+    <string name="about_title">关于 %1$s</string>
+    <string name="about_body">给音乐初学者的音准训练工具：
+
+🎹 钢琴实验室：弹琴发声，同时监听歌声，实时显示你唱的音与音准偏差（同音名跨八度算唱对）
+
+👂 听音选择：随机出题，从 do re mi fa sol la si 中选答案，音域可自选
+
+🎤 模唱练习：听标准音后唱出来，自动识别评分，音域可自选
+
+💡 提示：佩戴耳机练习可避免琴声干扰歌声识别
+
+本项目基于开源项目 openmusic 构建，开源地址：
+https://github.com/yaque/openmusic</string>
+    <string name="about_open">打开开源地址</string>
+    <string name="about_close">关闭</string>
+
+    <!-- 设置 -->
+    <string name="settings">设置</string>
+    <string name="settings_title">设置</string>
+    <string name="settings_label_display">键盘标签显示</string>
+    <string name="settings_label_jianpu">数字简谱（1 2 3，低音下加点，高音上加点）</string>
+    <string name="settings_label_solfege">唱名（do4 re4 mi4 …）</string>
+    <string name="settings_label_names">音名（C4 D4 E4 …）</string>
+    <string name="settings_label_all">全部显示（简谱 + 唱名 + 音名）</string>
+    <string name="settings_theme">外观配色</string>
+    <string name="settings_theme_system">跟随系统</string>
+    <string name="settings_theme_light">浅色</string>
+    <string name="settings_theme_dark">深色</string>
+    <string name="settings_key_width">琴键宽度：%1$d dp</string>
+    <string name="settings_key_height">琴键长度：%1$d dp</string>
+    <string name="settings_done">完成</string>
+
+    <!-- 重新计分 / 统一记录 -->
+    <string name="score_reset">清零</string>
+    <string name="score_records">记录</string>
+    <string name="records_title">计分记录</string>
+    <string name="records_piano">🎹 钢琴：%1$d 轮 · 平均 %2$d 分 · 最佳 %3$d 分</string>
+    <string name="records_ear">👂 听音：答 %1$d 题 · 正确率 %2$d%% · 最佳连击 %3$d</string>
+    <string name="records_sing">🎤 模唱：%1$d 次 · 平均 %2$d 分 · 最佳 %3$d 分</string>
+    <string name="records_melody">🎵 跟唱：%1$d 次 · 平均 %2$d 分 · 最佳 %3$d 分</string>
+
+    <!-- 模唱会话 -->
+    <string name="sing_next">下一轮</string>
+    <string name="sing_end_session">结束</string>
+    <string name="sing_playback">回听</string>
+    <string name="sing_session_summary">本轮结束：%1$d 次 · 平均 %2$d 分 · 最佳 %3$d 分</string>
+    <string name="sing_countdown_go">唱！</string>
+    <string name="sing_idle">点「开始模唱」进入练习（结束后停止计分）</string>
+
+    <!-- 跟唱页 -->
+    <string name="melody_input_label">简谱输入（1–7 唱名，0 = 休止，空格分隔）</string>
+    <string name="melody_default">1 2 3 4 5 6 7 6 5 4 3 2 1</string>
+    <string name="melody_start_note">起音</string>
+    <string name="melody_interval_label">每音（秒）</string>
+    <string name="melody_start">开始跟唱</string>
+    <string name="melody_end">结束</string>
+    <string name="melody_play">回听</string>
+    <string name="melody_status_idle">默认模板：C4 起 · 1234567654321 · 3 秒一个音，点「开始跟唱」</string>
+    <string name="melody_progress">第 %1$d/%2$d 音 · %3$s</string>
+    <string name="melody_note_ok">%1$d. %2$s ✓ 很准</string>
+    <string name="melody_note_close">%1$d. %2$s ~ 基本准（%3$s）</string>
+    <string name="melody_note_off">%1$d. %2$s ✗ %3$s</string>
+    <string name="melody_note_miss">%1$d. %2$s ✗ 未唱</string>
+    <string name="melody_rest">%1$d. 休止</string>
+    <string name="melody_summary">跟唱完成：%1$d 分 · %2$d/%3$d 音唱准</string>
+    <string name="melody_stopped">已结束，可点「回听」听刚才的录音</string>
+    <string name="melody_recording">录音中…（正在记录弹出的音与你的歌声）</string>
+    <string name="melody_empty">简谱为空，请先输入 1–7 的数字</string>
+    <string name="melody_countdown_go">唱！</string>
+
+    <!-- 曲线页 -->
+    <string name="curve_monitor_running">监听中：唱任意音，看实时曲线</string>
+    <string name="curve_current">当前：%1$s · %2$s Hz</string>
+    <string name="curve_no_voice">未检测到歌声</string>
+    <string name="curve_hint">横轴：时间（最近 12 秒） · 纵轴：音高（每条横线为一个 C 音）</string>
+    <string name="curve_clear">清屏</string>
+    <string name="curve_follow">自动跟随</string>
+
+    <!-- 音域选择 -->
+    <string name="range_from_piano">可弹范围 从</string>
+    <string name="range_from">音域 从</string>
+    <string name="range_to">到</string>
+
+    <!-- 通用 -->
+    <string name="start_monitor">开始监听</string>
+    <string name="stop_monitor">停止监听</string>
+    <string name="monitor_running">监听中：跟着弹的音唱，实时看音准</string>
+    <string name="monitor_stopped">监听已停止</string>
+    <string name="mic_denied">麦克风权限未授予，无法监听歌声</string>
+    <string name="label_pitch">音准偏差（音分）</string>
+
+    <!-- 钢琴实验室 -->
+    <string name="piano_title">钢琴实验室</string>
+    <string name="piano_hint">弹一个键，出一个声；同时跟着唱，实时显示你唱的是什么音、准不准。\n建议佩戴耳机，避免琴声干扰歌声识别。</string>
+    <string name="label_target">目标音（你弹的音）</string>
+    <string name="label_sung">你唱的音</string>
+    <string name="target_sub">唱名 %1$s · 简谱 %2$s</string>
+    <string name="target_sub_r">唱名 %1$s · 简谱 %2$s · 准星 %3$s</string>
+    <string name="transpose_label">监听音调</string>
+    <string name="transpose_none">不调整（准星 = 发声音）</string>
+    <string name="transpose_n">降 %1$d 个半音（%2$s → %3$s）</string>
+    <string name="transpose_up">升 %1$d 个半音（%2$s → %3$s）</string>
+    <string name="reset_confirm">清零%1$s的计分记录？</string>
+    <string name="reset_ok">清零</string>
+    <string name="sing_target_t">%1$s · 准星 %2$s</string>
+    <string name="order_label">模唱顺序</string>
+    <string name="order_random">随机</string>
+    <string name="order_asc">正序（低 → 高）</string>
+    <string name="order_desc">倒序（高 → 低）</string>
+    <string name="order_asc_desc">正序接倒序</string>
+    <string name="order_leap">跳进（do-mi-sol-si 模进）</string>
+    <string name="sing_seq_progress">（%1$d/%2$d）</string>
+    <string name="sing_round_no">（第 %1$d 次）</string>
+    <string name="sung_sub">%1$s · %2$s · %3$s Hz · %4$s 音分</string>
+    <string name="round_score">本轮得分：%1$d 分</string>
+    <string name="verdict_octave">%1$s（%2$s）</string>
+    <string name="octave_low">低八度</string>
+    <string name="octave_high">高八度</string>
+    <string name="verdict_wrong_note">音不对：你唱的是 %1$s，目标是 %2$s</string>
+    <string name="piano_stats">已练 %1$d 轮 · 平均 %2$d 分 · 最佳 %3$d 分</string>
+
+    <!-- 听音选择 -->
+    <string name="ear_title">听音选择</string>
+    <string name="ear_question_no">第 %1$d 题 · 听一听，这是哪个音？</string>
+    <string name="ear_start">开始</string>
+    <string name="ear_end">结束</string>
+    <string name="ear_ref">参考音 C4</string>
+    <string name="ear_replay">重听</string>
+    <string name="ear_idle">点击「开始」进入答题（结束后停止计分）</string>
+    <string name="ear_preview">开始前先试听音域全部音</string>
+    <string name="ear_preview_progress">试听 %1$d/%2$d · %3$s</string>
+    <string name="ear_preview_note">%1$s · %2$s</string>
+    <string name="ear_session_summary">本轮结束：答 %1$d 题 · 正确 %2$d · 正确率 %3$d%%</string>
+    <string name="degree_button">%1$s\n%2$s</string>
+    <string name="answer_option">%1$s\n%2$s · %3$s</string>
+    <string name="answer_correct">✓ 正确！这是 %1$s</string>
+    <string name="answer_wrong">✗ 正确答案是 %1$s</string>
+    <string name="ear_stats">答题 %1$d · 正确率 %2$d%% · 当前连击 %3$d · 最佳连击 %4$d</string>
+
+    <!-- 模唱练习 -->
+    <string name="sing_title">模唱练习</string>
+    <string name="sing_playing">正在播放标准音…</string>
+    <string name="sing_get_ready">听好了吗？马上开始唱</string>
+    <string name="sing_countdown">%1$d…</string>
+    <string name="sing_now">请唱出这个音（持续约 5 秒）…</string>
+    <string name="sing_no_voice">没听清你的歌声，请靠近手机再试一次</string>
+    <string name="sing_detected">你唱的：%1$s（%2$s Hz）</string>
+    <string name="sing_detecting">听到：%1$s</string>
+    <string name="sing_perfect">太准了！%1$d 分 ✓</string>
+    <string name="sing_result">%1$d 分 · %2$s</string>
+    <string name="sing_octave_ok">音名正确（%1$s），%2$d 分</string>
+    <string name="sing_wrong_note">唱的是 %1$s，目标是 %2$s，音没对上</string>
+    <string name="sing_done">本轮结束</string>
+    <string name="sing_stats">已模唱 %1$d 轮 · 平均 %2$d 分 · 最佳 %3$d 分</string>
+    <string name="sing_start">开始模唱</string>
+    <string name="chip_blind">盲唱模式（隐藏音名）</string>
 </resources>

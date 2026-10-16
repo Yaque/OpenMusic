@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 中文环境外显名称 -->
+    <string name="app_name">开音</string>
+</resources>

@@ -1,7 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.OpenMusic" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <!-- 深色主题 -->
+    <style name="Base.Theme.OpenMusic" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">#FF7FA8E8</item>
+        <item name="colorOnPrimary">#FF10243F</item>
+        <item name="colorSecondary">#FF34A853</item>
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 </resources>

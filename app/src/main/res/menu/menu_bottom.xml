@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_piano"
+        android:icon="@drawable/ic_piano"
+        android:title="@string/nav_piano" />
+    <item
+        android:id="@+id/nav_ear"
+        android:icon="@drawable/ic_ear"
+        android:title="@string/nav_ear" />
+    <item
+        android:id="@+id/nav_sing"
+        android:icon="@drawable/ic_mic"
+        android:title="@string/nav_sing" />
+    <item
+        android:id="@+id/nav_curve"
+        android:icon="@drawable/ic_chart"
+        android:title="@string/nav_curve" />
+    <item
+        android:id="@+id/nav_melody"
+        android:icon="@drawable/ic_note"
+        android:title="@string/nav_melody" />
+</menu>

@@ -2,4 +2,18 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- 浅色主题调色板 -->
+    <color name="app_background">#FFF4F5F7</color>
+    <color name="card_face">#FFFFFFFF</color>
+    <color name="text_primary">#FF1D1D22</color>
+    <color name="text_secondary">#FF5F6368</color>
+    <color name="text_hint">#FF80868B</color>
+    <color name="btn_face">#FFE8EAED</color>
+    <color name="accent_text">#FF2A5DB0</color>
+    <color name="ok_green">#FF1E8E3E</color>
+    <color name="warn_amber">#FFB06000</color>
+    <color name="bad_red">#FFD93025</color>
+    <color name="gauge_bg">#FFE0E2E5</color>
+    <color name="gauge_line">#FF5F6368</color>
 </resources>
